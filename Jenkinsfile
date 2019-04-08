@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'gizmotronic/oracle-java8'
-      args '-v /root/.m2:/root/.m2 -u root'
+      args '-v /root/.m2:/root/.m2 -v /var/jenkins_home:/var/jenkins_home -u root'
     }
 
   }
